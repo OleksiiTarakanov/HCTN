@@ -1,0 +1,10 @@
+<div class="content">
+    <ol>
+        <form [formArray] = "answerForm" *ngFor="let result of results">{{result.question}}
+            <div class="btn-group">
+                <button type="button" class="btn" value = "true" (click)="onClick()" formControlName = 'trueButton'>True</button>
+                <button type="button" class="btn" value = "false" (click)="onClick()" formControlName = 'falseButton'>False</button>
+            </div>
+        </form>
+    </ol>
+</div>
