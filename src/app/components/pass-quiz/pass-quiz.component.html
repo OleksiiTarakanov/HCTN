@@ -1,10 +1,10 @@
 <div class="content">
     <ol>
         <ol *ngFor="let result of results">{{result.question}}
-            <div class="btn-group">
+            <li class="btn-group">
                 <button type="button" class="btn" value = "true" (click)="onClick()">True</button>
                 <button type="button" class="btn" value = "false" (click)="onClick()">False</button>
-            </div>
+            </li>
         </ol>
     </ol>
 </div>
